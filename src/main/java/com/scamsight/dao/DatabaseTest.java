@@ -1,0 +1,22 @@
+package com.scamsight.dao;
+
+import java.sql.Connection;
+
+public class DatabaseTest {
+
+    public static void main(String[] args) {
+
+        try {
+            Connection connection = DatabaseConnection.getConnection();
+
+            System.out.println("MySQL connection successful!");
+
+            connection.close();
+
+        } catch (Exception e) {
+
+            System.out.println("MySQL connection failed!");
+            e.printStackTrace();
+        }
+    }
+}

@@ -1,0 +1,508 @@
+/* =========================================================
+   SCAMSIGHT - COMMON WEBSITE CSS
+   Shared background and common styling for all JSP pages
+   ========================================================= */
+
+
+/* -------------------------
+   GLOBAL RESET
+   ------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* -------------------------
+   BODY / COMMON BACKGROUND
+   ------------------------- */
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #eaf7ff;
+
+    background-image:
+        linear-gradient(
+            rgba(2, 7, 14, 0.72),
+            rgba(2, 7, 14, 0.82)
+        ),
+        url("../images/scammy-bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* -------------------------
+   LINKS
+   ------------------------- */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* -------------------------
+   NAVIGATION BAR
+   ------------------------- */
+
+nav {
+    width: 100%;
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 7%;
+
+    background: rgba(2, 8, 15, 0.90);
+
+    border-bottom: 1px solid rgba(56, 217, 255, 0.25);
+
+    box-shadow:
+        0 5px 25px rgba(0, 0, 0, 0.45);
+
+    backdrop-filter: blur(10px);
+}
+
+
+/* -------------------------
+   LOGO
+   ------------------------- */
+
+.logo {
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #38d9ff;
+
+    letter-spacing: 0.5px;
+
+    text-shadow:
+        0 0 12px rgba(56, 217, 255, 0.45);
+}
+
+
+/* -------------------------
+   MAIN CONTAINER
+   ------------------------- */
+
+.container {
+    width: 92%;
+    max-width: 1100px;
+
+    margin: 45px auto;
+}
+
+
+/* -------------------------
+   COMMON CARD
+   ------------------------- */
+
+.card {
+    background: rgba(5, 15, 25, 0.88);
+
+    border: 1px solid rgba(56, 217, 255, 0.18);
+
+    border-radius: 16px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.45),
+        0 0 25px rgba(0, 190, 255, 0.05);
+
+    backdrop-filter: blur(10px);
+}
+
+
+/* -------------------------
+   HEADINGS
+   ------------------------- */
+
+h1,
+h2,
+h3 {
+    color: #eafaff;
+}
+
+
+h1 {
+    font-size: 32px;
+}
+
+
+h2 {
+    font-size: 22px;
+}
+
+
+h3 {
+    font-size: 18px;
+}
+
+
+/* -------------------------
+   PARAGRAPHS
+   ------------------------- */
+
+p {
+    color: #9db3c1;
+
+    line-height: 1.7;
+}
+
+
+/* -------------------------
+   BUTTON
+   ------------------------- */
+
+button,
+.button {
+    display: inline-block;
+
+    padding: 13px 22px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #38d9ff;
+
+    color: #021019;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+
+button:hover,
+.button:hover {
+    background: #63e3ff;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 22px rgba(56, 217, 255, 0.22);
+}
+
+
+/* -------------------------
+   SECONDARY BUTTON
+   ------------------------- */
+
+.button-secondary {
+    background: rgba(20, 34, 46, 0.85);
+
+    color: #c6d9e3;
+
+    border: 1px solid rgba(148, 163, 184, 0.20);
+}
+
+
+.button-secondary:hover {
+    background: rgba(25, 45, 60, 0.95);
+
+    color: #38d9ff;
+
+    border-color: rgba(56, 217, 255, 0.40);
+}
+
+
+/* -------------------------
+   FORM
+   ------------------------- */
+
+form {
+    width: 100%;
+}
+
+
+/* -------------------------
+   FORM LABEL
+   ------------------------- */
+
+label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #b9d3df;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* -------------------------
+   INPUTS
+   ------------------------- */
+
+input,
+textarea,
+select {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid rgba(56, 217, 255, 0.18);
+
+    border-radius: 8px;
+
+    outline: none;
+
+    background: rgba(2, 9, 16, 0.85);
+
+    color: #eafaff;
+
+    font-size: 14px;
+
+    transition: all 0.25s ease;
+}
+
+
+input::placeholder,
+textarea::placeholder {
+    color: #637987;
+}
+
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #38d9ff;
+
+    box-shadow:
+        0 0 0 3px rgba(56, 217, 255, 0.08),
+        0 0 15px rgba(56, 217, 255, 0.08);
+}
+
+
+/* -------------------------
+   TEXTAREA
+   ------------------------- */
+
+textarea {
+    min-height: 150px;
+
+    resize: vertical;
+
+    line-height: 1.6;
+}
+
+
+/* -------------------------
+   PAGE HEADER
+   ------------------------- */
+
+.page-header {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+.page-header h1 {
+    margin-bottom: 10px;
+}
+
+
+.page-header p {
+    font-size: 14px;
+
+    color: #8198a7;
+}
+
+
+/* -------------------------
+   SECTION LABEL
+   ------------------------- */
+
+.section-label {
+    margin-bottom: 10px;
+
+    color: #38d9ff;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* -------------------------
+   ERROR MESSAGE
+   ------------------------- */
+
+.error {
+    margin-bottom: 18px;
+
+    padding: 12px 15px;
+
+    border-radius: 8px;
+
+    color: #ff9aa9;
+
+    background: rgba(244, 63, 94, 0.08);
+
+    border: 1px solid rgba(251, 113, 133, 0.25);
+
+    font-size: 14px;
+}
+
+
+/* -------------------------
+   SUCCESS MESSAGE
+   ------------------------- */
+
+.success {
+    margin-bottom: 18px;
+
+    padding: 12px 15px;
+
+    border-radius: 8px;
+
+    color: #6ee7a0;
+
+    background: rgba(34, 197, 94, 0.08);
+
+    border: 1px solid rgba(74, 222, 128, 0.25);
+
+    font-size: 14px;
+}
+
+
+/* -------------------------
+   WARNING MESSAGE
+   ------------------------- */
+
+.warning {
+    padding: 15px;
+
+    border-radius: 10px;
+
+    color: #fbbf24;
+
+    background: rgba(250, 204, 21, 0.07);
+
+    border: 1px solid rgba(250, 204, 21, 0.22);
+}
+
+
+/* -------------------------
+   RISK COLORS
+   ------------------------- */
+
+.risk-low {
+    color: #4ade80;
+}
+
+
+.risk-medium {
+    color: #facc15;
+}
+
+
+.risk-high {
+    color: #fb7185;
+}
+
+
+/* -------------------------
+   GLASS PANEL
+   ------------------------- */
+
+.glass {
+    background: rgba(4, 14, 24, 0.78);
+
+    border: 1px solid rgba(56, 217, 255, 0.16);
+
+    border-radius: 14px;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+
+/* -------------------------
+   FOOTER
+   ------------------------- */
+
+.footer {
+    text-align: center;
+
+    margin: 25px auto;
+
+    color: #536c79;
+
+    font-size: 12px;
+}
+
+
+/* -------------------------
+   MOBILE RESPONSIVE
+   ------------------------- */
+
+@media (max-width: 700px) {
+
+    nav {
+        padding: 0 5%;
+    }
+
+
+    .logo {
+        font-size: 21px;
+    }
+
+
+    .container {
+        width: 94%;
+
+        margin: 25px auto;
+    }
+
+
+    .card {
+        padding: 22px;
+    }
+
+
+    h1 {
+        font-size: 26px;
+    }
+
+
+    h2 {
+        font-size: 20px;
+    }
+
+
+    button,
+    .button {
+        width: 100%;
+
+        text-align: center;
+    }
+}
